@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Compétences | Youssouf SADICK</title>
+    <title>Portfolio | Moussa ABDELMEDJID</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -14,208 +14,2147 @@
             transform: translateY(-5px);
             transition: all 0.3s ease;
         }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
     </style>
 </head>
 
-<body class="bg-gray-50 min-h-screen text-gray-800">
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
 
-    <div class="container mx-auto px-4 pt-6 text-left">
-        <a href="index.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors group">
-            <i class="fas fa-arrow-left mr-1 transform group-hover:-translate-x-1 transition-transform"></i> Retour à
-            l'accueil
-        </a>
-    </div>
-
-    <section class="container mx-auto px-4 pb-20 pt-10">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Compétences Techniques</h2>
-            <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-blue-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-lock mr-3 text-blue-600"></i>Cryptologie & Maths
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Post-Quantique
-                        (Lattices)</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">PIR
-                        (Protocole)</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-medium">Cryptanalyse
-                        Arithmétique</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">AES, RSA, ECC</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Diffie-Hellman</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">SHA-2 / SHA-3</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Chiffrement homomorphe</span>
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Arithmétique
-                        modulaire</span>
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Théorie de la
-                        complexité</span>
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
                 </div>
             </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
 
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-green-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-network-wired mr-3 text-green-600"></i>Réseaux & Sécurité
-                </h3>
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
                 <div class="space-y-6">
                     <div>
-                        <h4 class="text-[10px] font-black uppercase text-green-600 tracking-widest mb-3">Réseaux &
-                            Protocoles</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs font-bold border border-green-100">TCP/IP</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">DNS / DHCP / SSH</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs">LDAP / Kerberos</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-700 rounded text-xs font-medium">NFSv4</span>
-                            <!--
-                            <span
-                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-bold italic">Backbone
-                                IP/MPLS</span>
-                            <span
-                                class="px-2 py-1 bg-green-100 text-green-800 rounded text-xs font-bold italic">Liaisons
-                                FH/IP</span>
-                        -->
-                        </div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
                     </div>
-
                     <div>
-                        <h4 class="text-[10px] font-black uppercase text-blue-600 tracking-widest mb-3">Sécurisation &
-                            Défense</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-bold">VPN /
-                                IPsec</span>
-                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">VLAN & ACL</span>
-                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">iptables / NAT</span>
-                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs font-medium">IDS /
-                                IPS</span>
-                            <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded text-xs">Wireshark / QEMU</span>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h4 class="text-[10px] font-black uppercase text-red-600 tracking-widest mb-3">Vulnérabilités &
-                            Attaques</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-bold border border-red-100">MITM</span>
-                            <span
-                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">Scan
-                                de ports</span>
-                            <span
-                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">ARP
-                                Poisoning</span>
-                            <span
-                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-medium border border-red-100">DNS
-                                Cache Poisoning</span>
-                            <span
-                                class="px-2 py-1 bg-red-50 text-red-700 rounded text-[10px] font-bold border border-red-100">Interception
-                                TLS/HTTPS</span>
-                        </div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-red-600">
-                <div class="flex justify-between items-start mb-6">
-                    <h3 class="font-bold text-xl flex items-center text-gray-900">
-                        <i class="fas fa-bug mr-3 text-red-600"></i>Sécurité Offensive
-                    </h3>
-                    <span class="text-[10px] font-black bg-red-600 text-white px-2 py-1 rounded shadow-sm">1140
-                        PTS</span>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-semibold">Reverse
-                        Engineering</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Ghidra / GDB / Pwndbg</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-medium">Buffer
-                        Overflow</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Format String</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-medium">CTF
-                        Challenges</span>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-cyan-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-sim-card mr-3 text-cyan-600"></i>Cartes à Puce
-                </h3>
-                <div class="space-y-4">
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs font-bold">Java Card /
-                            EMV</span>
-                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">GlobalPlatform</span>
-                        <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">Secure Messaging</span>
-                    </div>
-                    <div class="pt-2 border-t border-gray-50 text-xs italic font-bold text-red-600">
-                        <i class="fas fa-bolt mr-1"></i> Side-Channel (SPA, DPA)
-                    </div>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-orange-500">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-brain mr-3 text-orange-500"></i>Machine Learning
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span
-                        class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold">Scikit-learn</span>
-                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs font-bold">Pandas</span>
-                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs">NumPy / SciPy</span>
-                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-xs">Matplotlib</span>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-purple-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-code mr-3 text-purple-600"></i>Développement
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">Python</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-medium">C</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Java</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">SageMath</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">OCaml</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Git / LaTeX</span>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-gray-800">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-microchip mr-3 text-gray-800"></i>Systèmes
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-bold">Linux
-                        (Ubuntu/Debian/Kali)</span>
-                    <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium">Windows
-                        </span>
-                </div>
-            </div>
-
-            <div
-                class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 card-hover border-t-4 border-yellow-500">
-                <h3 class="font-bold text-xl mb-6 flex items-center text-gray-900">
-                    <i class="fas fa-globe mr-3 text-yellow-500"></i>Langues
-                </h3>
-                <div class="space-y-3">
-                    <p class="text-sm font-semibold">Français : <span
-                            class="text-gray-500 font-normal underline decoration-yellow-200">Natif</span></p>
-                    <p class="text-sm font-semibold">Anglais : <span
-                            class="text-gray-500 font-normal underline decoration-yellow-200">Intermédiaire (B1)</span>
-                    </p>
-                </div>
-            </div>
-
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
         </div>
-    </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Hassan ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Hassan ABDELMEDJID</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 4px;
+            background-color: #2563eb;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-gray-800 font-sans">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 py-12">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight">ABDELMEDJID Hassan</h1>
+                <p class="text-xl text-blue-600 font-medium mt-2 italic">Étudiant Ingénieur Électronique & Télécommunications</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm text-gray-600">
+                    <span><i class="fas fa-envelope mr-2 text-blue-600"></i>aliabdelmedjid@gmail.com</span>
+                    <span><i class="fas fa-phone mr-2 text-blue-600"></i>07 44 10 85 73</span>
+                    <span><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>France / Limoges</span>
+                    <span><i class="fas fa-car mr-2 text-blue-600"></i>Permis B</span>
+                </div>
+            </div>
+            <div class="mt-8 md:mt-0">
+                <a href="mailto:aliabdelmedjid@gmail.com" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <section id="profil" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed text-gray-600">
+                Orienté gestion de projets et conduite de travaux, je dispose d'une double compétence technique et opérationnelle. 
+                Je souhaite m'investir dans un stage de fin d'études au sein d'<strong>Axians / VINCI Energies</strong> sur des projets télécoms.
+            </p>
+        </section>
+
+        <section id="experiences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title mb-8">Expériences Professionnelles</h2>
+            <div class="space-y-8 max-w-5xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">Juin - Sept. 2025</span>
+                        <p class="text-sm text-gray-500">Limoges, France</p>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Chef de Projet - XLIM</h3>
+                        <p class="text-gray-600 mb-4 italic">Analyse de phénomènes électromagnétiques</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Développement d'outils MATLAB pour l'analyse de données techniques.</li>
+                            <li>Travail en environnement laboratoire (rigueur et documentation).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2022 - 2023</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Assistant Chef de Projet - AlbideyNet</h3>
+                        <p class="text-gray-600 mb-4 italic">Infrastructures télécoms fibre et radio</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Coordination d'équipes terrain et de sous-traitants.</li>
+                            <li>Évaluation des coûts, des délais et suivi des approvisionnements logistiques.</li>
+                            <li>Respect des règles de sécurité chantier (QSE).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/4">
+                        <span class="text-blue-600 font-bold">2021 - 2022</span>
+                    </div>
+                    <div class="md:w-3/4 border-l-2 border-gray-50 md:pl-8">
+                        <h3 class="text-xl font-bold">Stagiaire Ingénierie - ARCEP</h3>
+                        <p class="text-gray-600 mb-4 italic">Supervision & analyse technique</p>
+                        <ul class="list-disc list-outside ml-4 space-y-2 text-gray-700">
+                            <li>Analyse de performances réseau et contrôle technique sur le terrain.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Compétences Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border-t-4 border-blue-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tasks mr-2 text-blue-600"></i>Gestion & Chantier</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Suivi de chantier</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">APD / DOE</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Reporting</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">QSE</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-green-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-network-wired mr-2 text-green-600"></i>Télécoms & IP</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">FTTH</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">5G / Radio</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">VLAN / Routage</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Cisco</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border-t-4 border-purple-600 shadow-sm card-hover">
+                    <h3 class="font-bold mb-4"><i class="fas fa-tools mr-2 text-purple-600"></i>Outils Techniques</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Excel Avancé</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">AutoCAD</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">MATLAB</span>
+                        <span class="px-2 py-1 bg-gray-100 text-xs rounded">Atoll</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="text-2xl font-bold text-gray-900 section-title">Projets Marquants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2025 - 2026</div>
+                    <h3 class="text-lg font-bold">Planification 5G (Forsk Atoll)</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Analyse de couverture radio (SS-RSRP, SINR) et optimisation des paramètres tilt/azimut.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                    <div class="text-blue-600 text-sm font-bold mb-2">2024 - 2025</div>
+                    <h3 class="text-lg font-bold">Conception Réseau Fibre SDIS87</h3>
+                    <p class="text-gray-600 mt-2 text-sm">Étude et conception d'un réseau fibre optique multi-sites pour les services de secours.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section id="formation">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Formation</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold">Cycle Ingénieur - ENSIL-ENSCI</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent | Limoges, France</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Master Réseaux & Télécoms - ENASTIC</h3>
+                        <p class="text-blue-600 text-sm">2023 - Présent</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certificats">
+                <h2 class="text-2xl font-bold text-gray-900 section-title">Certificats</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>SecNum Académie</strong> - ANSSI (2025)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Deep Learning</strong> - Kaggle (2026)</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i class="fas fa-award text-yellow-500"></i>
+                        <span class="text-sm"><strong>Huawei Seeds for the Future</strong> (2022)</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-bold text-xl mb-4">Moussa ABDELMEDJID</p>
+            <p class="text-gray-400 text-sm">Disponible pour un stage de fin d'études en 2026.</p>
+            <div class="flex justify-center gap-6 mt-8">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
