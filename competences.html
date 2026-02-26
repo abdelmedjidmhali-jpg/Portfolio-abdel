@@ -10,9 +10,34 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     <style>
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
+        body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+        .soft-grid {
+            background-image: radial-gradient(rgba(59,130,246,0.12) 1px, transparent 1px);
+            background-size: 34px 34px;
+        }
+        .card-premium {
+            transition: all 0.25s ease;
+        }
+        .card-premium:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 45px -25px rgba(2, 6, 23, 0.35);
+        }
+        .glow-blue:hover { border-color: rgba(59,130,246,0.55); }
+        .glow-green:hover { border-color: rgba(34,197,94,0.55); }
+        .glow-cyan:hover { border-color: rgba(6,182,212,0.55); }
+        .glow-purple:hover { border-color: rgba(168,85,247,0.55); }
+        .glow-orange:hover { border-color: rgba(249,115,22,0.55); }
+        .glow-rose:hover { border-color: rgba(244,63,94,0.55); }
+        .glow-gray:hover { border-color: rgba(15,23,42,0.45); }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            border: 1px solid rgba(15,23,42,0.06);
         }
     </style>
 </head>
@@ -20,104 +45,213 @@
 <body class="bg-gray-50 min-h-screen text-gray-800">
 
     <div class="container mx-auto px-4 pt-6 text-left">
-        <a href="index.html"
-            class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors group">
+        <a href="index.html" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors group">
             <i class="fas fa-arrow-left mr-1 transform group-hover:-translate-x-1 transition-transform"></i>
             Retour à l'accueil
         </a>
     </div>
 
-    <section class="container mx-auto px-4 pb-20 pt-10">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                Compétences Techniques
-            </h2>
-            <div class="h-1.5 w-24 bg-blue-600 mx-auto rounded-full"></div>
-        </div>
+    <main class="container mx-auto px-4 pt-10 pb-20 max-w-7xl">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <!-- HERO -->
+        <section class="relative overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm p-7 md:p-10 soft-grid">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-600/5 via-indigo-600/5 to-cyan-600/5"></div>
 
-            <!-- Gestion de projets -->
-            <div class="bg-white rounded-2xl shadow-sm border p-8 card-hover border-t-4 border-blue-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center">
-                    <i class="fas fa-tasks mr-3 text-blue-600"></i>
-                    Gestion de Projets Télécoms
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Planification radio</span>
-                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold">Coordination terrain</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Suivi délais / coûts</span>
-                    <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs">Reporting technique</span>
-                    <span class="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs">Projets fibre & radio</span>
+            <div class="relative grid md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-extrabold tracking-wide uppercase">
+                        <i class="fas fa-shield-halved"></i> Compétences
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mt-4 tracking-tight">
+                        Compétences Techniques
+                    </h1>
+
+                    <p class="text-gray-600 mt-4 leading-relaxed max-w-3xl">
+                        Compétences issues de mes <strong>cours</strong>, <strong>stages</strong> et <strong>projets</strong> :
+                        électronique, télécommunications, RF, réseaux IP, analyse et gestion de projets.
+                        (Détails & livrables disponibles dans les sections <span class="font-bold">Projets</span> et <span class="font-bold">Expériences</span>.)
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mt-6">
+                        <span class="badge bg-blue-50 text-blue-700"><i class="fas fa-microchip"></i> Électronique</span>
+                        <span class="badge bg-indigo-50 text-indigo-700"><i class="fas fa-satellite-dish"></i> RF / Antennes</span>
+                        <span class="badge bg-cyan-50 text-cyan-700"><i class="fas fa-tower-broadcast"></i> Télécoms</span>
+                        <span class="badge bg-emerald-50 text-emerald-700"><i class="fas fa-network-wired"></i> Réseaux IP</span>
+                        <span class="badge bg-slate-100 text-slate-700"><i class="fas fa-diagram-project"></i> Gestion de projets</span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4">
+                    <div class="bg-white/80 backdrop-blur rounded-2xl border border-gray-200 p-6 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-xl bg-gray-900 text-white flex items-center justify-center shadow">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <div>
+                                <p class="text-[11px] font-black uppercase tracking-widest text-gray-400">Navigation</p>
+                                <p class="font-extrabold text-gray-900">Voir les preuves</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="projets.html" class="rounded-xl border border-gray-200 bg-gray-50 hover:bg-white p-3 transition text-sm font-bold text-gray-900 flex items-center gap-2">
+                                <i class="fas fa-code text-blue-600"></i> Projets
+                            </a>
+                            <a href="experience.html" class="rounded-xl border border-gray-200 bg-gray-50 hover:bg-white p-3 transition text-sm font-bold text-gray-900 flex items-center gap-2">
+                                <i class="fas fa-briefcase text-indigo-600"></i> Expériences
+                            </a>
+                            <a href="formation.html" class="rounded-xl border border-gray-200 bg-gray-50 hover:bg-white p-3 transition text-sm font-bold text-gray-900 flex items-center gap-2 col-span-2">
+                                <i class="fas fa-graduation-cap text-cyan-600"></i> Formation & matières (ELT)
+                            </a>
+                        </div>
+
+                        <p class="text-xs text-gray-500 mt-4 leading-relaxed">
+                            Les sections Projets/Expériences contiennent des détails et documents (PDF) pour appuyer ces compétences.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Réseaux radio -->
-            <div class="bg-white rounded-2xl shadow-sm border p-8 card-hover border-t-4 border-green-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center">
-                    <i class="fas fa-broadcast-tower mr-3 text-green-600"></i>
-                    Réseaux Radio & Mobiles
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold">2G / 3G / 4G / 5G</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold">Optimisation KPI</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">RSRP</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">SINR</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">Taux de coupure</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">Congestion</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">Analyse de couverture</span>
-                    <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full text-xs">FTTH</span>
+        <!-- GRID CARDS -->
+        <section class="mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Gestion de projets -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-blue border-t-4 border-blue-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-tasks mr-3 text-blue-600"></i> Gestion de projets télécoms
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-blue-50 text-blue-700">Planification</span>
+                        <span class="badge bg-blue-50 text-blue-700">Coordination terrain</span>
+                        <span class="badge bg-slate-100 text-slate-700">Suivi coûts / délais</span>
+                        <span class="badge bg-slate-100 text-slate-700">Reporting technique</span>
+                        <span class="badge bg-indigo-50 text-indigo-700">Qualité / conformité</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Réseaux IP -->
-            <div class="bg-white rounded-2xl shadow-sm border p-8 card-hover border-t-4 border-cyan-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center">
-                    <i class="fas fa-network-wired mr-3 text-cyan-600"></i>
-                    Réseaux IP
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-xs font-bold">VLAN</span>
-                    <span class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-xs font-bold">VPN</span>
-                    <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">NAT</span>
-                    <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">Routage (notions)</span>
-                    <span class="px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full text-xs">LAN / WAN</span>
+                <!-- Réseaux radio -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-green border-t-4 border-green-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-tower-broadcast mr-3 text-green-600"></i> Réseaux radio & mobiles
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-green-50 text-green-700">2G / 3G / 4G / 5G</span>
+                        <span class="badge bg-green-50 text-green-700">Optimisation RAN</span>
+                        <span class="badge bg-slate-100 text-slate-700">Analyse KPI</span>
+                        <span class="badge bg-slate-100 text-slate-700">RSRP / SINR</span>
+                        <span class="badge bg-slate-100 text-slate-700">Couverture & amélioration</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Outils -->
-            <div class="bg-white rounded-2xl shadow-sm border p-8 card-hover border-t-4 border-purple-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center">
-                    <i class="fas fa-tools mr-3 text-purple-600"></i>
-                    Outils
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">Excel avancé</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-bold">Power BI</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">MATLAB</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Atoll</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">AutoCAD</span>
-                    <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs">Python (RF)</span>
+                <!-- Réseaux IP -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-cyan border-t-4 border-cyan-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-network-wired mr-3 text-cyan-600"></i> Réseaux & protocoles IP
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-cyan-50 text-cyan-700">LAN / WAN</span>
+                        <span class="badge bg-cyan-50 text-cyan-700">VLAN</span>
+                        <span class="badge bg-cyan-50 text-cyan-700">VPN</span>
+                        <span class="badge bg-slate-100 text-slate-700">Adressage IP</span>
+                        <span class="badge bg-slate-100 text-slate-700">NAT</span>
+                        <span class="badge bg-slate-100 text-slate-700">Routage (notions)</span>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Expérimentation -->
-            <div class="bg-white rounded-2xl shadow-sm border p-8 card-hover border-t-4 border-red-600">
-                <h3 class="font-bold text-xl mb-6 flex items-center">
-                    <i class="fas fa-microchip mr-3 text-red-600"></i>
-                    Expérimentation & RF
-                </h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs font-semibold">Analyse phénomènes électromagnétiques</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Acquisition signaux RF</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">SS-RSRP</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Tilt / Azimut</span>
-                    <span class="px-3 py-1 bg-red-50 text-red-800 rounded-full text-xs">Optimisation couverture 5G</span>
+                <!-- Électronique -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-orange border-t-4 border-amber-500">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-microchip mr-3 text-amber-500"></i> Électronique (académique)
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-amber-50 text-amber-800">Analogique</span>
+                        <span class="badge bg-amber-50 text-amber-800">Numérique</span>
+                        <span class="badge bg-slate-100 text-slate-700">Circuits & composants</span>
+                        <span class="badge bg-slate-100 text-slate-700">Instrumentation (TP)</span>
+                        <span class="badge bg-yellow-50 text-yellow-800">Conception (notions)</span>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
+                <!-- RF / Micro-ondes -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-rose border-t-4 border-rose-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-satellite-dish mr-3 text-rose-600"></i> RF • micro-ondes • antennes
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-rose-50 text-rose-700">Électromagnétisme</span>
+                        <span class="badge bg-rose-50 text-rose-700">Mesures RF</span>
+                        <span class="badge bg-slate-100 text-slate-700">Propagation (bases)</span>
+                        <span class="badge bg-slate-100 text-slate-700">HFSS / ADS</span>
+                        <span class="badge bg-pink-50 text-pink-700">CEM (notions)</span>
+                    </div>
+                </div>
+
+                <!-- Traitement du signal -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-purple border-t-4 border-indigo-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-wave-square mr-3 text-indigo-600"></i> Signal & analyse
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-indigo-50 text-indigo-700">DSP (bases)</span>
+                        <span class="badge bg-indigo-50 text-indigo-700">Analyse de signaux</span>
+                        <span class="badge bg-slate-100 text-slate-700">Acquisition RF</span>
+                        <span class="badge bg-slate-100 text-slate-700">Visualisation</span>
+                        <span class="badge bg-violet-50 text-violet-700">Python / MATLAB</span>
+                    </div>
+                </div>
+
+                <!-- Fibre / Optique -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-orange border-t-4 border-orange-500">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-fiber-manifold mr-3 text-orange-500"></i> Fibre optique & infrastructures
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-orange-50 text-orange-700">FTTH</span>
+                        <span class="badge bg-orange-50 text-orange-700">Suivi déploiement</span>
+                        <span class="badge bg-slate-100 text-slate-700">Conformité & sécurité</span>
+                        <span class="badge bg-slate-100 text-slate-700">Coordination terrain</span>
+                        <span class="badge bg-amber-50 text-amber-700">Reporting</span>
+                    </div>
+                </div>
+
+                <!-- Outils -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-purple border-t-4 border-purple-600">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-tools mr-3 text-purple-600"></i> Outils & logiciels
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-gray-900 text-white border border-gray-900">MATLAB</span>
+                        <span class="badge bg-slate-100 text-slate-700">Excel avancé</span>
+                        <span class="badge bg-slate-100 text-slate-700">Power BI</span>
+                        <span class="badge bg-slate-100 text-slate-700">Atoll</span>
+                        <span class="badge bg-slate-100 text-slate-700">Python</span>
+                        <span class="badge bg-fuchsia-50 text-fuchsia-700">KiCad</span>
+                        <span class="badge bg-fuchsia-50 text-fuchsia-700">Eclipse</span>
+                        <span class="badge bg-rose-50 text-rose-700">HFSS / ADS</span>
+                    </div>
+                </div>
+
+                <!-- Transverses -->
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-8 card-premium glow-gray border-t-4 border-gray-900">
+                    <h3 class="font-extrabold text-xl mb-6 flex items-center text-gray-900">
+                        <i class="fas fa-people-group mr-3 text-gray-900"></i> Compétences transverses
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge bg-gray-100 text-gray-800">Rigueur</span>
+                        <span class="badge bg-gray-100 text-gray-800">Esprit d’analyse</span>
+                        <span class="badge bg-gray-100 text-gray-800">Autonomie</span>
+                        <span class="badge bg-gray-100 text-gray-800">Communication technique</span>
+                        <span class="badge bg-gray-100 text-gray-800">Travail en équipe</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
 
 </body>
 
