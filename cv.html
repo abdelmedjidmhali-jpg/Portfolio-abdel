@@ -2,18 +2,18 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV | Abdelmedjid Moussa Hassan Ali</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
         body { font-family: 'Helvetica', 'Arial', sans-serif; }
         .section-title {
-            color: #3399FF;
+            color: #2563EB;
             font-weight: bold;
-            font-size: 1.125rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
-            border-bottom: 1.5px solid #3399FF;
+            border-bottom: 1.5px solid #2563EB;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
             display: block;
@@ -29,35 +29,47 @@
 
 <body class="bg-slate-100 p-4 md:p-10 text-[14px] text-slate-800">
 
+    <!-- Barre haut -->
     <div class="max-w-4xl mx-auto mb-6 flex justify-between items-center no-print">
         <a href="index.html" class="text-blue-600 hover:underline flex items-center gap-2 font-semibold">
             <i class="fas fa-arrow-left"></i> Retour au Portfolio
         </a>
-        <button onclick="window.print()" class="bg-[#3399FF] text-white px-5 py-2 rounded font-bold shadow hover:bg-blue-500 transition-all">
+        <button onclick="window.print()" class="bg-blue-600 text-white px-5 py-2 rounded font-bold shadow hover:bg-blue-500 transition-all">
             <i class="fas fa-file-pdf mr-2"></i> Exporter en PDF
         </button>
     </div>
 
+    <!-- Contenu CV -->
     <div class="max-w-4xl mx-auto bg-white p-10 shadow-lg min-h-screen">
 
-        <header class="text-center space-y-2 mb-6">
-            <h1 class="text-3xl font-bold uppercase tracking-tight">Abdelmedjid Moussa Hassan Ali</h1>
-            <p class="text-lg font-semibold">
-                Recherche stage de fin d’études – 6 mois – dès fin mars 2026
+        <header class="text-center space-y-3 mb-8">
+            <h1 class="text-3xl font-bold uppercase tracking-tight">
+                Abdelmedjid Moussa Hassan Ali
+            </h1>
+
+            <p class="text-lg font-semibold text-slate-700">
+                Élève Ingénieur en Électronique & Télécommunications
             </p>
 
-            <div class="flex flex-wrap justify-center gap-x-4 text-slate-600">
-                <span><i class="fas fa-map-marker-alt text-[#3399FF]"></i> France</span>
-                <span><i class="fas fa-phone text-[#3399FF]"></i> 07 44 10 85 73</span>
+            <p class="text-sm text-blue-600 font-semibold">
+                Pour plus de détails sur mon profil, mes projets et ma formation :
+                <a href="https://tonpseudo.github.io" target="_blank" class="underline">
+                    Consultez mon Portfolio en ligne
+                </a>
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-x-4 text-slate-600 mt-2">
+                <span><i class="fas fa-map-marker-alt text-blue-600"></i> France</span>
+                <span><i class="fas fa-phone text-blue-600"></i> 07 44 10 85 73</span>
                 <a href="mailto:abdelmedjidmhali@gmail.com" class="hover:underline">
-                    <i class="fas fa-envelope text-[#3399FF]"></i> abdelmedjidmhali@gmail.com
+                    <i class="fas fa-envelope text-blue-600"></i> abdelmedjidmhali@gmail.com
                 </a>
             </div>
 
             <div class="flex flex-wrap justify-center gap-x-4 text-slate-600">
-                <span><i class="fas fa-id-card text-[#3399FF]"></i> Permis B</span>
-                <a href="www.linkedin.com/in/abdelmedjid-m-h-a-7aa2131a3" class="hover:underline">
-                    <i class="fab fa-linkedin text-[#3399FF]"></i> LinkedIn : Abdelmedjid M.H.A
+                <span><i class="fas fa-id-card text-blue-600"></i> Permis B</span>
+                <a href="https://www.linkedin.com/in/abdelmedjid-m-h-a-7aa2131a3" target="_blank" class="hover:underline">
+                    <i class="fab fa-linkedin text-blue-600"></i> LinkedIn
                 </a>
             </div>
         </header>
@@ -65,20 +77,19 @@
         <section>
             <h2 class="section-title">Profil</h2>
             <p class="text-justify leading-relaxed">
-                Étudiant en dernière année d’école d’ingénieur en Électronique et Télécommunications (ENSIL–ENSCI).
-                Spécialisé en planification radio, optimisation RAN, électronique et gestion de projets télécoms
-                (fibre, radio, réseaux IP). Recherche un stage de fin d’études (6 mois) dès fin mars 2026.
+                Élève ingénieur en dernière année en Électronique & Télécommunications.
+                Expérience en environnement opérateur, laboratoire de recherche et gestion de projets télécoms.
+                Profil polyvalent alliant analyse technique, rigueur scientifique et coordination opérationnelle.
+                Recherche un stage de fin d’études (6 mois) dès fin mars 2026.
             </p>
         </section>
 
         <section>
             <h2 class="section-title">Formation</h2>
-            <div class="space-y-4">
-                <div>
-                    <div class="flex justify-between font-bold">
-                        <span>Cycle Ingénieur – Électronique & Télécommunications (ENSIL–ENSCI)</span>
-                        <span>2023 — Présent</span>
-                    </div>
+            <div>
+                <div class="flex justify-between font-bold">
+                    <span>Cycle Ingénieur – Électronique & Télécommunications (ENSIL–ENSCI)</span>
+                    <span>2023 — Présent</span>
                 </div>
             </div>
         </section>
@@ -86,55 +97,39 @@
         <section>
             <h2 class="section-title">Expériences Professionnelles</h2>
 
-            <div class="space-y-6">
+            <div class="space-y-5">
 
                 <div>
                     <div class="flex justify-between font-bold">
-                        <span>Stagiaire chef de projet – XLIM</span>
+                        <span>Stagiaire – XLIM</span>
                         <span>Avril — Sept. 2025</span>
                     </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Expérimentation et analyse de phénomènes électromagnétiques.</li>
-                        <li>Développement d’outils MATLAB pour l’analyse et la visualisation de données techniques.</li>
-                        <li>Travail en environnement laboratoire : rigueur, procédures, documentation.</li>
+                    <ul class="list-disc ml-5 mt-2">
+                        <li>Analyse et expérimentation en environnement laboratoire.</li>
+                        <li>Développement d’outils techniques sous MATLAB.</li>
+                        <li>Documentation et reporting technique.</li>
                     </ul>
                 </div>
 
                 <div>
                     <div class="flex justify-between font-bold">
-                        <span>Stagiaire Radio Network (RAN) – Moov Africa Tchad</span>
+                        <span>Stagiaire Radio Network (RAN) – Moov Africa</span>
                         <span>2023 — 2024</span>
                     </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Participation aux activités d’optimisation radio (2G/3G/4G/5G).</li>
-                        <li>Analyse des KPI réseau : RSRP, SINR, taux de coupure, congestion.</li>
-                        <li>Contribution à l’analyse de couverture et à l’identification des zones à optimiser.</li>
-                        <li>Support aux opérations de planification radio et propositions d’amélioration.</li>
-                        <li>Suivi des incidents radio et analyse des performances réseau.</li>
+                    <ul class="list-disc ml-5 mt-2">
+                        <li>Participation aux activités d’optimisation réseau mobile.</li>
+                        <li>Analyse des indicateurs de performance et support technique.</li>
                     </ul>
                 </div>
 
                 <div>
                     <div class="flex justify-between font-bold">
-                        <span>Assistant chef de projet – AlbideyNet</span>
+                        <span>Assistant Chef de Projet – AlbideyNet</span>
                         <span>2022 — 2023</span>
                     </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Suivi de projets d’infrastructures télécoms (fibre et radio).</li>
-                        <li>Coordination d’interventions terrain et échanges avec les équipes techniques.</li>
-                        <li>Évaluation des coûts, délais et besoins matériels.</li>
-                        <li>Suivi de conformité, respect des règles de sécurité, reporting technique.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="flex justify-between font-bold">
-                        <span>Stagiaire ingénierie – ARCEP</span>
-                        <span>2021 — 2022</span>
-                    </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Analyse de performances réseau et contrôle technique terrain.</li>
-                        <li>Supervision et analyse technique.</li>
+                    <ul class="list-disc ml-5 mt-2">
+                        <li>Suivi de projets d’infrastructures télécoms.</li>
+                        <li>Coordination terrain et reporting.</li>
                     </ul>
                 </div>
 
@@ -143,65 +138,38 @@
 
         <section>
             <h2 class="section-title">Projets Académiques</h2>
-            <div class="space-y-4">
 
-                <div>
-                    <div class="flex justify-between font-bold">
-                        <span>Projet de fin d’études – Planification Radio 5G</span>
-                        <span>2025 — 2026</span>
-                    </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Analyse de couverture radio (SS-RSRP, SINR).</li>
-                        <li>Paramétrage tilt / azimut et optimisation.</li>
-                        <li>Reporting technique.</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <div class="flex justify-between font-bold">
-                        <span>Station mobile POCSAG</span>
-                        <span>2024 — 2025</span>
-                    </div>
-                    <ul class="list-disc ml-5 space-y-1 mt-2">
-                        <li>Acquisition et analyse de signaux RF.</li>
-                        <li>Traitement Python.</li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Compétences</h2>
-            <ul class="space-y-2">
-                <li><strong>Gestion de projets télécoms :</strong> planification, coordination terrain, suivi délais/coûts, reporting.</li>
-                <li><strong>Réseaux radio & mobiles :</strong> 2G/3G/4G/5G, optimisation KPI (RSRP, SINR), FTTH.</li>
-                <li><strong>Réseaux IP :</strong> VLAN, VPN, NAT, routage (notions), LAN/WAN.</li>
-                <li><strong>Outils :</strong> Excel avancé, Power BI, MATLAB, Atoll, AutoCAD.</li>
+            <ul class="list-disc ml-5">
+                <li>Projet de fin d’études – Planification Radio 5G</li>
+                <li>Station mobile POCSAG</li>
             </ul>
         </section>
 
         <section>
-            <h2 class="section-title">Certificats</h2>
-            <ul class="list-disc ml-5 space-y-1">
+            <h2 class="section-title">Compétences</h2>
+
+            <ul class="space-y-1">
+                <li><strong>Électronique & Télécommunications</strong></li>
+                <li><strong>Réseaux Mobiles & Infrastructures</strong></li>
+                <li><strong>Gestion de Projets Techniques</strong></li>
+                <li><strong>Outils :</strong> MATLAB, Excel, Power BI, Atoll</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">Certifications</h2>
+            <ul class="list-disc ml-5">
                 <li>Intro to Deep Learning – Kaggle (2026)</li>
                 <li>SecNumAcadémie – ANSSI (2025)</li>
                 <li>Huawei Seeds for the Future (2022)</li>
             </ul>
         </section>
 
-        <section class="mb-6">
-            <h2 class="section-title">Informations Complémentaires</h2>
-            <p><strong>Centres d’intérêt :</strong> Football, jeu d’échecs, lecture, voyages.</p>
-        </section>
-
     </div>
 
-    <footer class="text-center py-12 text-gray-400 text-xs font-medium uppercase tracking-widest">
-        &copy; 2026 Abdelmedjid Moussa Hassan Ali • Portfolio Ingénieur Télécommunications & Eléctronique
+    <footer class="text-center py-12 text-gray-400 text-xs uppercase tracking-widest">
+        © 2026 Abdelmedjid Moussa Hassan Ali • Ingénieur Électronique & Télécommunications
     </footer>
 
 </body>
 </html>
-
----
